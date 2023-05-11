@@ -1,0 +1,32 @@
+<div class="offcanvas offcanvas-end"
+tabindex="-1"
+id="offcanvasNavbar"
+aria-labelledby="offcanvasNavbarLabel">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">lorem</h5>
+    <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <nav class="nav flex-column">
+            <a class="nav-item <%= activePage === 'index' ? 'nav-item-on' : '' %>" href="./index">index</a>
+            <a class="nav-item <%= activePage === 'general_vocabulary' ? 'nav-item-on' : '' %>" href="general_vocabulary">general vocabulary</a>
+            <a class="nav-item <%= activePage === 'all_presentations' ? 'nav-item-on' : '' %>" href="all_presentations">all presentations</a>
+        </nav>
+      </ul>      
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <aside class="col-md-3 d-none d-md-block" id="sidebar">
+        <nav class="nav flex-column">
+            <a class="nav-item <%= activePage === 'index' ? 'nav-item-on' : '' %>" href="./index">index</a>
+            <a class="nav-item <%= activePage === 'general_vocabulary' ? 'nav-item-on' : '' %>" href="general_vocabulary">general vocabulary</a>
+            <a class="nav-item <%= activePage === 'all_presentations' ? 'nav-item-on' : '' %>" href="all_presentations">all presentations</a>
+        </nav>
+    </aside>

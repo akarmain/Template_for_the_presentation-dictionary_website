@@ -1,0 +1,35 @@
+{
+	"Example of a presentation 0": {
+		"author": "akarmain",
+		"category": "rad",
+		"extension": "pptx",
+		"number_slides": 3,
+		"crumbers_words": {
+			"A one rad": [1],
+			"А two rad": [1, 2],
+			"А three rad": [1, 2, 3]
+		}
+	},
+	"Example of a presentation 1": {
+		"author": "akarmain",
+		"category": "green",
+		"extension": "pptx",
+		"number_slides": 3,
+		"crumbers_words": {
+			"Z one green": [1],
+			"C two green": [1, 2],
+			"В Dthree green": [1, 2, 3]
+		}
+	},
+	"Example of a presentation 2": {
+		"author": "akarmain",
+		"category": "blue",
+		"extension": "pptx",
+		"number_slides": 3,
+		"crumbers_words": {
+			"M one blue": [1],
+			"C two blue": [1, 2],
+			"M three blue": [1, 2, 3]
+		}
+	}
+}

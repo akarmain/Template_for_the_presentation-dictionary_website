@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<%- include('templates/head.ejs') %>
+	<link rel="stylesheet" href="../css/style.css" />
+	<!-- <script defer src="../js/presentation_creator.js"></script> -->
+</head>
+<body class="light-mode">
+	<%- include('templates/header.ejs') %>
+	<%- include('templates/layout_panel.ejs', { activePage: activePage || 'all_presentations' }) %>
+	<main class="col-md-9 col-sm-12">
+		<h1>Author(s): <%= author %></h1>
+		<div
+			id="collapseOne"
+			class="accordion-collapse collapse show"
+			data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<div
+					id="carouselExampleRide1"
+					class="carousel slide carousel-fade"
+					data-bs-ride="true">
+					<div class="carousel-inner">
+						<% for (let i = 1; i <= numberSlides; i++) { %>
+							<div class="carousel-item <%= i === 1 ? 'active' : '' %>">
+								<img
+									src="../media/presentations/<%= author.replace(/ /g, '_') %>/slide_<%= i %>.jpeg"
+									class="d-block w-100 border border-2"
+									alt="Slide <%= i %>" />
+							</div>
+						<% } %>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleRide1"
+						data-bs-slide="prev">
+						<span
+							class="bi bi-arrow-left-circle"
+							style="font-size: 2rem; color: black"
+							aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleRide1"
+						data-bs-slide="next">
+						<span
+							class="bi bi-arrow-right-circle"
+							style="font-size: 2rem; color: black"
+							aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<br />
+				<div class="container my-5">
+					<a href="../media/download/<%= author.replace(/ /g, '_') %>.<%=extension%>" class="btn btn-primary btn-lg"><strong>Download in .pptx (<%= numberSlides %> slides	)</strong></a>
+				</div>
+			</div>
+		</div>
+		<div id="accordionExample"></div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

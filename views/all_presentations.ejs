@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<%- include('templates/head.ejs') %>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script defer src="js/parse.js"></script>
+	</head>
+	<body class="light-mode">
+		<%- include('templates/header.ejs') %>
+		<%- include('templates/layout_panel.ejs', { activePage: activePage }) %>
+		<main class="col-md-9 col-sm-12">
+		<h1>All presentations</h1>
+		  <div class="container">
+			<div id="cards-container" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+			</div>
+		  </div>  	
+		</main>
+		</div>
+		</div>
+	</body>
+</html>
