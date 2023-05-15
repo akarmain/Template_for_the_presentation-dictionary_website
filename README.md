@@ -12,7 +12,7 @@ Template\_for\_the\_presentation-dictionary\_website
 
 1.  Загрузите проект и скачайте все зависимости `npm install`
     
-2.  Проверьте работоспособность `nodemon server.js`
+2.  Проверьте работоспособность `node server.js`
     
 3.  Сконвертируйте все презентации в набор слайдов с расширением .jpeg. Для этого можно воспользоваться скриптом ppt\_to\_jpeg.py
     
@@ -86,4 +86,4 @@ Template\_for\_the\_presentation-dictionary\_website
 
 ### 📇Контакты 
 Если у вас возникли трудности или вопросы не стесняйтесь писать мне:
-Мой Telegram: [akarmain]([mailto:andreykarmain@yandex.ru](https://t.me/akarmain)) почта: [andreykarmain@yandex.ru](mailto:andreykarmain@yandex.ru)
+Мой Telegram: [akarmain](https://t.me/akarmain) почта: [andreykarmain@yandex.ru](mailto:andreykarmain@yandex.ru)
